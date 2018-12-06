@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/myteksi/go-tour/init_trap/config"
+	"github.com/tigren/go-tour/init_trap/config"
 )
 
 var (
@@ -15,6 +15,7 @@ func IsEnabled() bool {
 }
 
 func init() {
+	config.Init()
 	if config.Config.ApiConf == nil {
 		apiEnabled = false
 		return

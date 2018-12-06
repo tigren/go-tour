@@ -3,9 +3,9 @@ package init
 import (
 	"testing"
 
-	"github.com/myteksi/go-tour/init_trap/api"
-	"github.com/myteksi/go-tour/init_trap/config"
 	"github.com/stretchr/testify/assert"
+	"github.com/tigren/go-tour/init_trap/api"
+	"github.com/tigren/go-tour/init_trap/config"
 )
 
 func TestUseApi(t *testing.T) {

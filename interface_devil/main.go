@@ -12,6 +12,7 @@ func raiseErrorWhenBadThingsHappens(bad bool) error {
 	var me *myError
 	if bad {
 		me = &myError{Msg: "this is bad!"}
+		return me
 	}
-	return me
+	return nil
 }
